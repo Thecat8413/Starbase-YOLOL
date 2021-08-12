@@ -1,0 +1,20 @@
+//Unused Line
+RS=5 PS=2.5 MaxRot=45 MinRot=-45 MaxPit=20 MinPit=-15
+if :Laser and :Sweep then goto4 end goto2
+:LRot=MinRot :LPit=MinPit RG=MaxRot PG=MaxPit goto5
+if :LCRot==:LRot and :LCPit==:LPit then goto7 end goto6
+if :Laser and :Sweep then goto5 end goto10
+if :LRot==RG then goto8 end :LRot=RG goto5
+if :LPit==PG then goto9 end :LPit+=PS RG=-RG goto5
+goto3
+:LRot=0 :LPit=0 :Laser=0 :Sweep=0 goto3
+
+
+
+
+
+//Basic Single Laser Sweep Script V1
+//Written by Thecat8413
+
+
+
