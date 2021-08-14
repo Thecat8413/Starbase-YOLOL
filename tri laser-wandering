@@ -1,0 +1,18 @@
+if :MLD == 0 then :TurretRotation = 0 end
+if :MLD == 0 then :TurretPitch = 0 goto 1 end
+:TurretRotation = 180
+:TurretPitch = 75
+if :holdToggle == 1 then goto1 end
+:TurretPitch = 80
+:TurretRotation = 180
+:TurretRotation = 200
+:TurretPitch = 75
+:TurretRotation = 170
+:TurretRotation = 190
+ goto1
+ 
+ 
+ //point laser facing out and away from ship. when turned on laser will
+ //rotate out and to center of ship in a pyramid when holdtoggle is on
+ //when holdtoggle is off lasers take a wandering pattern
+ //set MiningLaserBeamLength to 19
