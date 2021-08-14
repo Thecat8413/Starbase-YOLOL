@@ -1,0 +1,10 @@
+dur=:TotalValue/:ValuePerSecond
+S=dur/60*100 dur-=S dur/=60 IF S<10 THEN S="0"+S END
+M=dur/60*100 dur-=M dur/=60 IF M<10 THEN M="0"+M END
+H=dur dur-=H IF H<10 THEN H="0"+H END IF H>99 THEN H="99" END
+:Output="\nHH:MM:SS\n"+H+":"+M+":"+S GOTO1
+
+
+// :TotalValue is the total value that it could be
+// :ValuePerSecond is using the VPS script to calculate the delta per second
+// :Output is where the content goes. Can be customized to only output the time
