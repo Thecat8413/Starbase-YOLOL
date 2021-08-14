@@ -1,0 +1,2 @@
+if :Emergency == 1 then :Cruise = 0 :FcuForward = 100 goto2 end goto1
+if :Emergency == 0 then :Cruise = 4 :FcuForward = 0 goto1 end goto2
