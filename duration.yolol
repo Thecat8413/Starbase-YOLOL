@@ -8,3 +8,4 @@ H=dur dur-=H IF H<10 THEN H="0"+H END IF H>99 THEN H="99" END
 // :TotalValue is the total value that it could be
 // :ValuePerSecond is using the VPS script to calculate the delta per second
 // :Output is where the content goes. Can be customized to only output the time
+// This requires a BASIC chip
