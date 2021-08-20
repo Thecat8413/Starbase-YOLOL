@@ -1,0 +1,5 @@
+A=100 R=1000 C=5 :RangeFinderSearchLength=R+1
+if :ACAS then if :RFD>R then goto2 else goto3 end else goto1 end
+:CS=0 :FcuUpDown=A :FcuBackward=A FS=:FcuForward :FcuForward=0 goto4
+if :RFD>R then goto5 end goto4
+:CS=C :FcuUpDown=0 :FcuBackward=0 :FcuForward=FS goto1
